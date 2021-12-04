@@ -11,7 +11,7 @@ import reducers from "./reducers";
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(compose((window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore)));
 
-// import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import "./style/main.scss";
 
 function main() {
