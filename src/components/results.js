@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 import Logo from "./logo";
 import SearchBar from './searchBar';
+import ResultsPosts from "./recentPosts";
 
 import { connect } from 'react-redux';
 import * as actions from '../actions';
-import ResultsPosts from "./recentPosts";
 
 class Results extends Component {
 

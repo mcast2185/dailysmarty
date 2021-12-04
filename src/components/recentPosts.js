@@ -13,11 +13,11 @@ class RecentPosts extends Component {
 
   renderPosts = function() {
     const posts = this.props.recentPosts.map((post, index) => {
-        if(index < 3) {
-            return (
-                <Post {...post} key={index} />
-            )   
-        }
+      if(index < 3) {
+        return (
+          <Post {...post} key={index} />
+        )   
+      }
     })
     return posts
   }
@@ -35,11 +35,11 @@ class RecentPosts extends Component {
       </div>
     )
   };
-};
+}
 
 function mapStateToProps(state) {
   return {
-      recentPosts: state.posts.recentPosts
+    recentPosts: state.posts.recentPosts
   }
 }
 
