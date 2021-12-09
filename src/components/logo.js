@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Logo extends Component {
-  render(){
+  render() {
     const size = {
       height: this.props.size ? this.props.size : 105,
       width: this.props.size ? this.props.size : 105,
@@ -16,6 +16,6 @@ class Logo extends Component {
       </div>
     )
   };
-};
+}
 
 export default Logo;
