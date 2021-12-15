@@ -28,6 +28,14 @@ $color-gray-one: #666666;
 $color-gray-two: #B3B3B3;
 $color-blue-one: #0079FF;
 
+
+.no-content {
+    color: $color-gray-one;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+
 @import './mixins.scss';
 @import './searchBar';
 @import './recentPosts';
