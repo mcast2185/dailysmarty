@@ -10,7 +10,7 @@ class SearchBar extends Component {
   };
 
   renderInput(field) {
-    return <input type="text" placeholder="Search smarty" {...field.input} />
+    return <input type="text" placeholder="&#xf002; Search smarty" {...field.input} />
   };
 
   render(){
@@ -18,7 +18,7 @@ class SearchBar extends Component {
     const { handleSubmit } = this.props;
 
     return (
-      <form className="search-bar" onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
+      <form className={`search-bar search-bar__${this.props.page}`} onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
         <div className="search-bar__wrapper">
           <Field name="query" component={this.renderInput}/>
           <p>Press return to search</p>

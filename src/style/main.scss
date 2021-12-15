@@ -1,6 +1,5 @@
-
 .post-topic {
-    margin: 0 4px
+    margin: 0 4px;
 }
 
 body {
@@ -12,22 +11,25 @@ body {
     justify-content: center;
 }
 
-.home {
-    height: 100vh;
-    width: 66vw;
-    display: grid;
-    align-content: space-around;
-    justify-items: stretch;
-}
-
 .logo-main,
 .recent-posts {
     display: grid;
     justify-items: center;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
+$color-gray-three: #D8D8D8;
 $color-gray-one: #666666;
 $color-gray-two: #B3B3B3;
+$color-blue-one: #0079FF;
 
+@import './mixins.scss';
 @import './searchBar';
+@import './recentPosts';
+@import './home';
+@import './results.scss'
